@@ -1,0 +1,6 @@
+Vue Js ile basit bir alışveriş sepeti örneği çalışması yaptım.
+VueJs kodlarımı sepet.js dosyasına yazdım.
+Verilerimi data.json dosyasına yazdım.
+Diziler oluşturdum ve methodlarla işlemlerimi gerçekleştirdim.
+Stillerimi sepet.css dosyasına yazdım.
+Çalışmalarımı Localhost üzerinde gerçekleştirdim.

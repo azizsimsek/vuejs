@@ -1,0 +1,30 @@
+{
+  "sepet": [
+    {
+      "url": "https://www.gittigidiyor.com/arama/?k=sade+g%C3%BCm%C3%BC%C5%9F+alyans",
+      "resim": "https://mcdn01.gittigidiyor.net/29206/tn30/292069277_tn30_0.jpg",
+      "ad": "Sade Gümüş Alyans 925 Ayar",
+      "satici": "GittiGidiyor.com",
+      "stokdurum": true,
+      "kargodurum": true
+    },
+    {
+      "url": "https://www.hediyerengi.com/urun/i%CC%87sme-ozel-pierre-cardin-deri-erkek-cuzdani-ve-roller-kalem-seti-p2361-39045?utm_source=criteo&utm_medium=cpc&utm_campaign=lowerfunnel",
+      "resim": "https://www.hediyerengi.com/urun-resim/39045/i%CC%87sme-ozel-pierre-cardin-deri-erkek-cuzdani-ve-roller-kalem-seti-p2361-8-(438).jpg",
+      "ad": "İsme Özel Pierre Cardin Deri Erkek Cüzdanı ve Roller Kalem Seti P2361",
+      "satici": "HediyeRengi.com",
+      "stokdurum": false,
+      "kargodurum": true
+    }
+  ],
+  "bekleme": [
+    {
+      "url": "https://urun.gittigidiyor.com/taki-saat/casio-mtp-1374d-1avdf-erkek-kol-saati-kskmp-250470244?scrf=haftanin-cok-satanlari",
+      "resim": "https://mcdn01.gittigidiyor.net/25047/tn50/250470244_tn50_0.jpg?1508117430",
+      "ad": "Casio MTP-1374D-1AVDF Erkek Kol Saati",
+      "satici": "GittiGidiyor.com",
+      "stokdurum": true,
+      "kargodurum": true
+    }
+  ]
+}

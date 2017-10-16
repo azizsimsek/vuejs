@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alışveriş Sepeti</title>
+  <link rel="stylesheet" type="text/css" href="sepet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+  <script type="text/javascript" src="sepet.js"></script>
+</head>
+<body>
+  <div id="sepetim">
+    <p v-if="yukleme">Şu an yükleniyor, Bekleyiniz</p>
+    <h2>Alışveriş Sepeti</h2>
+    <p v-if="!sepet.length">Sepette Ürün Yok.</p>
+    <div class="sepet">
+      <div class="item" v-for="(item, index) in sepet">
+        <div class="resim">
+          <a v-bind:href="item.url">
+            <img v-bind:src="item.resim" />
+          </a>
+        </div>
+        <div class="bilgi">
+          <h4>{{item.ad}}</h4>
+          <p class="satici">{{item.satici}}</p>
+          <p class="durum" v-if="item.stokdurum">Stokta Var</p>
+          <p class="kargo" v-if="item.kargodurum">Ücretsiz Kargo</p>
+          <a href="#" v-on:click="sepetsil(index)">Sil</a>
+          <a href="#" class="yanal" v-on:click="beklemeyeal(index)">Beklemeye Al</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="bekleme-header">Kaydedilenler ({{bekleme.length}} ürün beklemede)</h2> 
+    <div class="sepet ">
+      <div class="item" v-for="(item, index) in bekleme">
+        <div class="resim">
+          <a v-bind:href="item.url">
+            <img v-bind:src="item.resim" />
+          </a>
+        </div>
+        <div class="bilgi">
+          <h4>{{item.ad}}</h4>
+          <p class="satici">{{item.satici}}</p>
+          <p class="durum" v-if="item.stokdurum">Stokta Var</p>
+          <p class="kargo" v-if="item.kargodurum">Ücretsiz Kargo</p>
+          <a href="#" v-on:click="beklemedensil(index)">Sil</a>
+          <a href="#" class="yanal" v-on:click="sepetekle(index)">Sepete ekle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
